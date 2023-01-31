@@ -1,0 +1,140 @@
+/*
+            SPACING SYSTEM (px)
+            2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+            FONT SIZE SYSTEM (px)
+            10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+            */
+
+/*
+            */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+body {
+  font-family: "Josefin Sans", sans-serif;
+  color: #343a40;
+  line-height: 1;
+}
+
+/***************************/
+/* SECTION HERO */
+/***************************/
+
+/*
+
+- Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
+
+
+*/
+.section-hero {
+  padding: 12.5rem 0 0 0;
+}
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  max-width: 140rem;
+  background-image: linear-gradient(
+      rgb(255, 245, 245, 0.9),
+      rgb(238, 140, 140, 0.1)
+    ),
+    url(images/bg-pattern-desktop.svg);
+}
+.hero-text-box {
+  padding: 6.4rem 12rem 0 12rem;
+}
+
+.logo {
+  margin-bottom: 9.6rem;
+}
+
+.heading-primary {
+  display: grid;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.heading-primary .heading {
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+  font-size: 6.2rem;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+.heading-primary span {
+  font-size: 5.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 8px;
+}
+
+.hero-description {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+  margin-top: 2.4rem;
+}
+.hero-cta {
+  margin-top: 2.4rem;
+  position: relative;
+}
+
+.hero-cta input {
+  width: 400px;
+  height: 50px;
+  border-radius: 20px;
+  border: 1px solid hsl(0, 36%, 70%);
+  padding: 0 2.4rem;
+}
+
+.hero-cta input::placeholder {
+  color: hsl(0, 36%, 70%);
+  text-align: start;
+}
+
+.hero-img-box {
+  display: grid;
+}
+
+.hero-img-box img {
+  width: 75%;
+  justify-self: end;
+}
+
+.arrow-icon {
+  display: inline-block;
+  padding: 1.6rem 4.4rem;
+  border-radius: 2.4rem;
+  background-image: linear-gradient(
+    rgb(238, 140, 140, 0.5),
+    rgb(238, 140, 140, 0.9)
+  );
+  position: absolute;
+  left: 70%;
+  box-shadow: 0px 20px 30px 0 rgba(0, 0, 0, 0.12);
+  /* transform: translate(-50% 0); */
+}
+
+.arrow-icon:hover {
+  background-image: linear-gradient(
+    rgb(248, 191, 191, 0.75),
+    rgb(248, 191, 191, 0.75)
+  );
+
+  /* background-image: linear-gradient(rgb(248, 191, 199), rgb(248, 191, 191)); */
+  transition: all 0.3s;
+}
