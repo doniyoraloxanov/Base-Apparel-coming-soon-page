@@ -11,6 +11,7 @@ Users should be able to:
 ### Desktop version
 
 ![Desktop vesrion ](./images/desktop-version.png)
+![Mobile vesrion ](./images/mobile-version.png)
 
 ### Links
 
